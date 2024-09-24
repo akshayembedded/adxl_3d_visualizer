@@ -1,6 +1,6 @@
 /*
     Arduino and ADXL345 Accelerometer - 3D Visualization Example 
-    by Dejan, https://howtomechatronics.com
+    by Akshay, https://embeddedmachan.in
 */
 
 import processing.serial.*;
@@ -15,7 +15,7 @@ PImage logo;  // Declare a PImage variable for the logo
 
 void setup() {
   size (960, 640, P3D);
-  myPort = new Serial(this, "COM1", 9600); // Start serial communication
+  myPort = new Serial(this, "COM4", 9600); // Start serial communication
   myPort.bufferUntil('\n');
   
   logo = loadImage("logo.jpg"); // Load the logo image
